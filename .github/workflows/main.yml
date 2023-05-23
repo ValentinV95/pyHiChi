@@ -11,7 +11,7 @@ jobs:
       run: |
         sudo add-apt-repository ppa:ubuntu-toolchain-r/test
         sudo apt-get update
-        sudo apt-get install g++-10 libomp-10-dev ninja-build
+        sudo apt-get install g++-10 libomp-13-dev ninja-build
         sudo apt-get install python3-pip python3-dev
         sudo python3 -m pip install --upgrade pip
     - name: Update submodules
@@ -67,7 +67,7 @@ jobs:
       run: |
         sudo add-apt-repository ppa:ubuntu-toolchain-r/test
         sudo apt-get update
-        sudo apt-get install clang-8 libomp-10-dev ninja-build
+        sudo apt-get install clang-13 libomp-13-dev ninja-build
         sudo apt-get install python3-pip python3-dev
         sudo python3 -m pip install --upgrade pip
     - name: Update submodules
